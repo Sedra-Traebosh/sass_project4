@@ -1,0 +1,207 @@
+//  start slider
+
+.slider{
+  blockquote{
+    font:{
+      size:20px;
+      style: italic;
+      weight: bold;
+      family: tahoma,arial;
+
+
+
+    }
+
+    line-height: 1.7;
+    text-align: center;
+    color: #5e5e5e;
+    width: 66%;
+    margin: 30px auto;
+  }
+  img{
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+
+
+
+  }
+  .bullets{
+    text-align: center;
+    li{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: $gryColor;
+      border-radius: 50%;
+      border: 3px solid $gryColor;
+      cursor: pointer;
+      &.active,&:hover{
+        border: 3px solid #333;
+        background-color: #fff;
+      }
+
+
+
+
+    }
+  }
+
+}
+
+
+//end slider
+
+
+
+
+
+
+//start services
+
+
+.services{
+  .service-box{
+      @media  #{$minMedium}{
+        float: $float-left;
+        width: (100%/3);
+        &:not(:last-of-type){
+          padding-right: 20px;
+        }
+
+      }
+    @media  #{$maxMobile}{
+      i{
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+
+    .service-title{
+        color: #666;
+      i{
+        font-size: 35px;
+        position:relative;
+        top: 4px;
+
+
+      }
+
+    }
+
+    .service-desc{
+      color: #777;
+      line-height: 1.5;
+
+    }
+
+    .link{
+      color:$redColor;
+      text-decoration: none;
+
+    }
+
+  }
+
+}
+
+//end services
+
+
+//start our playrs
+
+.our-playrs{
+
+  .playr-box{
+    padding-right: 20px;
+    border: 2px solid $pinkColor;
+    @media #{$minSmall}{
+      float: $float-left;
+      width: ( 100% / 2 );
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    @media #{$minMedium}{
+      width: ( 100% / 3 );
+      text-align: $text-left;
+      margin-bottom: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media #{$minLarge}{
+      width: ( 100% / 5 );
+    }
+    @media #{$maxMobile}{
+      margin-bottom: 40px;
+    }
+
+
+    .playr-img{
+      width: 300px;
+      height: 210px;
+      max-width: 100%;
+      border-bottom: 1px solid black;
+      @media #{$maxMobile} {
+      height: 296px;
+      }
+    }
+
+    .playr-title{
+        color: #666;
+        font-weight:normal;
+
+        span{
+          font-weight: bold;
+          text-align: center;
+          text-decoration: underline;
+
+        }
+
+    }
+
+    .playr-desc{
+      color: #777;
+      line-height: 2.5;
+
+    }
+
+    .link{
+      color:$redColor;
+      text-decoration: none;
+
+    }
+
+    .btn{
+      width: 116px;
+      height: 31px;
+      border-radius: 10px;
+      background-color: $pinkColor;
+      margin-bottom: 10px;
+
+    }
+
+  }
+
+}
+
+//end our playrs
+
+
+
+
+// start lorem ipsum
+
+.lorem-ipsum{
+  .lorem-box{
+    float: $float-left;
+    width: (94% /3);
+    &:not(:last-of-type){
+      margin-right: 3%;
+    }
+    .lorem-img{
+      max-width: 100%;
+    }
+  }
+
+}
+// end lorem ipsum

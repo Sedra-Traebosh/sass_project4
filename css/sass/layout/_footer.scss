@@ -1,0 +1,107 @@
+
+// start footer
+
+
+ .footer{
+   background-color: #e2e2e2;
+  overflow-x: hidden;
+  padding-top: 30px;
+  margin-top: 50px;
+
+    .contact{
+     float: $float-left;
+     width: 40%;
+
+        }
+
+  //
+  // .gallery{
+  //
+  //   @media #{$minSmall}{
+  //     width: 100%;
+  //   }
+  //   @media #{$minMedium}{
+  //       width: 50%;
+  //   }
+  //
+  //     }
+    }
+    .flex{
+      display: flex;
+      justify-content: space-between;
+      @media #{$maxMobile}{
+         display: block;
+         .contact{
+          width: 100%;
+             }
+             .cont{
+               width: 100%;
+             }
+       }
+       @media #{$minSmall}{
+         display: block;
+         .contact{
+          width: 100%;
+             }
+             .cont{
+               width: 100%;
+             }
+
+       }
+       @media #{$minMedium}{
+         display: flex;
+       }
+    }
+
+  .contact{
+    @media #{$minSmall}{
+      width: 50%;
+    }
+    @media #{$minMedium}{
+          width: 25%;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea{
+      border: 1px solid #c9c9c9;
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 10px;
+      width: 100%;
+    }
+      textarea{
+        height: 140px;
+      }
+  }
+
+  .section-title{
+    color: #444;
+    font-weight: normal;
+  }
+  .cont{
+    // width: 100%;
+    float: $float-left;
+  }
+  .copyright{
+    padding: 25px 0px;
+    border-top: 1px solid #c5c5c5;
+    overflow: hidden;
+    color: #888;
+    margin-top: 30px;
+
+
+    .text,
+    .author{
+      float: $float-left;
+      width: 50%;
+    }
+    .author{
+      text-align: $text-right
+    }
+
+  }
+
+
+
+
+// end footer
